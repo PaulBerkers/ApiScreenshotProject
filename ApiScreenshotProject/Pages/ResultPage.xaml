@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="ApiScreenshotProject.Pages.ResultPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ApiScreenshotProject.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Background="LightGray">
+                <TextBlock Margin="0,20,0,0" Text="Uw screenshot is gemaakt!" FontSize="50" FontWeight="Bold" Foreground="Orange" TextAlignment="Center"></TextBlock>
+                <TextBlock Margin="0,0,0,20" Text="Kijk in uw debug map!" FontSize="30" FontWeight="Bold" Foreground="Black" TextAlignment="Center"></TextBlock>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="1">
+                <Image x:Name="img"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>
