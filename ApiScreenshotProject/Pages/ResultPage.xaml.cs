@@ -62,13 +62,13 @@ namespace ApiScreenshotProject.Pages
                 {
                     string result = url.Substring(0, url.IndexOf("/"));
                     img.Source = null;
-                    BitmapImage image = new BitmapImage(new Uri(@"C:\Users\PaulB\source\repos\ApiScreenshotProject\ApiScreenshotProject\bin\x86\Debug\AppX\" + result + ".jpeg", UriKind.Absolute));
+                    BitmapImage image = new BitmapImage(new Uri(@"C:\Users\paulb\source\repos\PaulBerkers\ApiScreenshotProject\ApiScreenshotProject\bin\x86\Debug\AppX\" + result + ".jpeg", UriKind.Absolute));
                     img.Source = image;
                 }
                 else
                 {
                     img.Source = null;
-                    BitmapImage image = new BitmapImage(new Uri(@"C:\Users\PaulB\source\repos\ApiScreenshotProject\ApiScreenshotProject\bin\x86\Debug\AppX\" + url + ".jpeg", UriKind.Absolute));
+                    BitmapImage image = new BitmapImage(new Uri(@"C:\Users\paulb\source\repos\PaulBerkers\ApiScreenshotProject\ApiScreenshotProject\bin\x86\Debug\AppX\" + url + ".jpeg", UriKind.Absolute));
                     img.Source = image;
                 }
 
